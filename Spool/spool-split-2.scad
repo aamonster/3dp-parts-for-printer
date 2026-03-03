@@ -1,17 +1,17 @@
-outer_diameter = 55.5 + 0.2 + 0.2;        // Внешний диаметр
+outer_diameter = 55.5 + 0.7;        // Outer diameter (spool inner diameter + some extra)
 avg_diameter = 40;
-inner_diameter = 21.8 - 0.2 - 0.1 + 0.2;  // Внутренний диаметр (для оси)
-height = 7.2+1.2;                         // Высота
-segments = 8;                        // Количество делений окружности
+inner_diameter = 21.8 - 0.5;  // Inner diameter (bearing outer diameter - some extra)
+height = 7.2+1.2;
+segments = 8;                        // Number of parts circle splitted to
 
 line_width = 0.6;
 gap = 2; // in outer part - wide (it will shrink)
 gap2 = 0.4; // in inner part – narrow (it will expand)
 
 gap_avg = 0.1; // in medium circle - it will stick
-dr = 1.5; // ширина упоров на центральной окружности (at least 2*line_width)
+dr = 0.8; // ширина упоров на центральной окружности
 
-emphasis = 0.6; // ширина упора для подшипника/катушки
+emphasis = 0.8; // ширина упора для подшипника/катушки
 emphasis_height = 0.6; // выстота упора для подшипника/катушки
 
 $fn=256;
