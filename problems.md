@@ -26,6 +26,7 @@ Z axis have backlash too but it is effectively discarded by Z-hop = 0.5.
 Totally absent, it's main problem of the printer (blobs at corners, underextrusion after corners; higher acceleration and lower speed improve quality).
 
 Partial workaround: use as huge acceleration (600) and jerk (10) as possible.
+TODO: check partial workaround 2: in slicer turn on "Actual speed" mode after slicing and check if picture is basically monochrome. Decrease speed if not so (you can decrease speed and check print time: while it's not grow as fast as speed decreases – speed is too high).
 
 WIP: g-code preprocessing to simulate Linear Advance (split lines to short parts with speed change not more than Jerk, calculate E for each part, merge parts with same speed back if possible).
 
